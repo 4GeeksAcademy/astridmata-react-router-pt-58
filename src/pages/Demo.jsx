@@ -8,6 +8,8 @@ export const Demo = () => {
 
   return (
     <div className="container">
+      <h3>{store.saludo}</h3>
+
       <ul className="list-group">
         {/* Map over the 'todos' array from the store and render each item as a list element */}
         {store && store.todos?.map((item) => {
