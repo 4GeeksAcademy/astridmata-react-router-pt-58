@@ -10,14 +10,16 @@ export const Home = () => {
 	return (
 		<div className="text-center mt-5">
 			<h1>Hello Rigo!!</h1>
-            <h3>{store.saludo}</h3>
+			<h3>{store.saludo}</h3>
 
 
 			<Link to="/informacion">
 				<button className="btn btn-danger">Ir a Info</button>
 			</Link>
 
-
+			<Link to="/agenda-astrid">
+				<button className="btn btn-danger">Ir a agenda Astrid</button>
+			</Link>
 
 			<p>
 				<img src={rigoImageUrl} />

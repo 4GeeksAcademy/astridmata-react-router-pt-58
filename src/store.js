@@ -54,6 +54,13 @@ export default function storeReducer(store, action = {}) {
       };
 
     /////////////////////////////////////////
+    case 'get_contacts':
+
+       return {
+       
+        ...store, contacts : action.payload
+      };
+    //////////////////////////////////////
     default:
       throw Error('Unknown action.');
   }

@@ -7,8 +7,10 @@ import {
 } from "react-router-dom";
 import { Layout } from "./pages/Layout";
 import { Home } from "./pages/Home";
+import { Agenda } from "./pages/Agenda.jsx";
 import { Single } from "./pages/Single";
 import { Demo } from "./pages/Demo";
+import { EditContact } from "./pages/EditContact.jsx";
 import { Info } from "./pages/Info.jsx";
 import { AddContact } from "./pages/AddContact.jsx";
 
@@ -28,7 +30,9 @@ export const router = createBrowserRouter(
         <Route path="/single/:theId" element={ <Single />} />  {/* Dynamic route for single items */}
         <Route path="/demo" element={<Demo />} />
         <Route path="/informacion" element={<Info />} /> 
-         <Route path="/add-contact" element={<AddContact />} />
+        <Route path="/add-contact" element={<AddContact />} />
+         <Route path="/agenda-astrid" element={<Agenda />} />
+          <Route path="/edit-contact/:contact_id" element={ <EditContact />} />
       </Route>
     )
 );
